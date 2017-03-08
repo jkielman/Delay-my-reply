@@ -12,11 +12,7 @@ import UserNotifications
 
 class MessagesViewController: MSMessagesAppViewController {
     
-   /// @IBAction func deliverHighFiveTapped(_ sender: AnyObject) {
-      //  let notificationManger = NotificationManager()
-      //  notificationManger.registerForNotifications()
-   // }
-    
+ 
     
     @IBOutlet weak var twentyMins: UIButton!
     @IBOutlet weak var sixtyMins: UIButton!
