@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="Delay_my_replyMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jls-3O-ut6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UBl-Mb-y9q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reply in 20 mins"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNg-Ff-Qnh">
+                                <rect key="frame" x="0.0" y="156.5" width="375" height="154.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="q1Q-xd-AZe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reply in 60 mins"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqL-aq-I9g">
+                                <rect key="frame" x="0.0" y="312" width="375" height="155.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jbw-6s-g2c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reply in 2 hrs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj1-JA-gvu">
+                                <rect key="frame" x="0.0" y="468.5" width="375" height="154.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reply Tomorrow"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jls-3O-ut6" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="571-wP-HSC"/>
+                            <constraint firstItem="fqL-aq-I9g" firstAttribute="height" secondItem="jls-3O-ut6" secondAttribute="height" id="6ss-dh-ZJ7"/>
+                            <constraint firstItem="fqL-aq-I9g" firstAttribute="leading" secondItem="Aj1-JA-gvu" secondAttribute="leading" id="O5L-B6-r6f"/>
+                            <constraint firstItem="fqL-aq-I9g" firstAttribute="top" secondItem="tNg-Ff-Qnh" secondAttribute="bottom" constant="1" id="OFc-a1-1Gg"/>
+                            <constraint firstItem="tNg-Ff-Qnh" firstAttribute="height" secondItem="jls-3O-ut6" secondAttribute="height" id="QSH-Q7-0ES"/>
+                            <constraint firstItem="tNg-Ff-Qnh" firstAttribute="trailing" secondItem="fqL-aq-I9g" secondAttribute="trailing" id="ZmP-Jo-WbQ"/>
+                            <constraint firstAttribute="trailing" secondItem="jls-3O-ut6" secondAttribute="trailing" id="aKh-ut-hmi"/>
+                            <constraint firstItem="jls-3O-ut6" firstAttribute="leading" secondItem="tNg-Ff-Qnh" secondAttribute="leading" id="d9u-xs-7we"/>
+                            <constraint firstItem="jls-3O-ut6" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="eQl-YK-hAb"/>
+                            <constraint firstItem="fqL-aq-I9g" firstAttribute="trailing" secondItem="Aj1-JA-gvu" secondAttribute="trailing" id="eez-Ci-7SB"/>
+                            <constraint firstItem="tNg-Ff-Qnh" firstAttribute="leading" secondItem="fqL-aq-I9g" secondAttribute="leading" id="foc-xP-zmm"/>
+                            <constraint firstItem="tNg-Ff-Qnh" firstAttribute="top" secondItem="jls-3O-ut6" secondAttribute="bottom" constant="1" id="hLp-rb-KEc"/>
+                            <constraint firstItem="jls-3O-ut6" firstAttribute="trailing" secondItem="tNg-Ff-Qnh" secondAttribute="trailing" id="rVA-Mp-yjl"/>
+                            <constraint firstItem="Aj1-JA-gvu" firstAttribute="top" secondItem="fqL-aq-I9g" secondAttribute="bottom" constant="1" id="tLk-mu-jcQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Aj1-JA-gvu" secondAttribute="bottom" constant="44" id="wt3-KO-UiI"/>
+                            <constraint firstItem="Aj1-JA-gvu" firstAttribute="height" secondItem="jls-3O-ut6" secondAttribute="height" id="yCf-md-z06"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.5" y="-128.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
