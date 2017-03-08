@@ -8,10 +8,22 @@
 
 import UIKit
 import Messages
+import UserNotifications
 
 class MessagesViewController: MSMessagesAppViewController {
     
-   
+   /// @IBAction func deliverHighFiveTapped(_ sender: AnyObject) {
+      //  let notificationManger = NotificationManager()
+      //  notificationManger.registerForNotifications()
+   // }
+    
+    
+    @IBOutlet weak var twentyMins: UIButton!
+    @IBOutlet weak var sixtyMins: UIButton!
+    @IBOutlet weak var twoHrs: UIButton!
+    @IBOutlet weak var twentyFourHrs: UIButton!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
