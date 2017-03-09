@@ -90,6 +90,12 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="sixtyMins" destination="tNg-Ff-Qnh" id="rsD-gd-WPZ"/>
+                        <outlet property="twentyFourHrs" destination="Aj1-JA-gvu" id="G7X-pt-62W"/>
+                        <outlet property="twentyMins" destination="jls-3O-ut6" id="zeN-qP-TT2"/>
+                        <outlet property="twoHrs" destination="fqL-aq-I9g" id="PAv-je-jef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

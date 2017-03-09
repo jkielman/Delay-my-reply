@@ -14,34 +14,48 @@ class MessagesViewController: MSMessagesAppViewController {
     
  
     
-  //  @IBOutlet weak var twentyMins: UIButton!
-  //  @IBOutlet weak var sixtyMins: UIButton!
-  //  @IBOutlet weak var twoHrs: UIButton!
-  //  @IBOutlet weak var twentyFourHrs: UIButton!
+   @IBOutlet weak var twentyMins: UIButton!
+   @IBOutlet weak var sixtyMins: UIButton!
+   @IBOutlet weak var twoHrs: UIButton!
+   @IBOutlet weak var twentyFourHrs: UIButton!
     
    
     @IBAction func twentyMinsTapped(_ sender: AnyObject) {
         let sendNotification = SendNotification()
         sendNotification.registerForNotifications()
-        
-        
+     twentyMins.isHidden = true
+     sixtyMins.isHidden = true
+     twoHrs.isHidden = true
+     twentyFourHrs.isHidden = true
         
     }
     
     @IBAction func sixtyMinsTapped(_ sender: AnyObject) {
         let sendNotification = SendNotification()
         sendNotification.registerForNotifications()
+        twentyMins.isHidden = true
+        sixtyMins.isHidden = true
+        twoHrs.isHidden = true
+        twentyFourHrs.isHidden = true
     }
     
     
     @IBAction func twoHoursTapped(_ sender: AnyObject) {
         let sendNotification = SendNotification()
         sendNotification.registerForNotifications()
+        twentyMins.isHidden = true
+        sixtyMins.isHidden = true
+        twoHrs.isHidden = true
+        twentyFourHrs.isHidden = true
     }
     
     @IBAction func twentyFourHoursTapped(_ sender: AnyObject) {
         let sendNotification = SendNotification()
         sendNotification.registerForNotifications()
+        twentyMins.isHidden = true
+        sixtyMins.isHidden = true
+        twoHrs.isHidden = true
+        twentyFourHrs.isHidden = true
         
     }
     

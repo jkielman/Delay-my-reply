@@ -25,7 +25,7 @@ class SendNotification: NSObject {
         let sendNotificationContent = UNMutableNotificationContent()
         
         
-        
+
         
         //Change wording?
         sendNotificationContent.body = "remoteParticipantIdentifier" + " " + "is waiting for a message back"
