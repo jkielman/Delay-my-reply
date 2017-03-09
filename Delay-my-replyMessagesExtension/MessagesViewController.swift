@@ -8,22 +8,49 @@
 
 import UIKit
 import Messages
-import UserNotifications
+
 
 class MessagesViewController: MSMessagesAppViewController {
     
  
     
-    @IBOutlet weak var twentyMins: UIButton!
-    @IBOutlet weak var sixtyMins: UIButton!
-    @IBOutlet weak var twoHrs: UIButton!
-    @IBOutlet weak var twentyFourHrs: UIButton!
+  //  @IBOutlet weak var twentyMins: UIButton!
+  //  @IBOutlet weak var sixtyMins: UIButton!
+  //  @IBOutlet weak var twoHrs: UIButton!
+  //  @IBOutlet weak var twentyFourHrs: UIButton!
     
-
+   
+    @IBAction func twentyMinsTapped(_ sender: AnyObject) {
+        let sendNotification = SendNotification()
+        sendNotification.registerForNotifications()
+        
+        
+        
+    }
+    
+    @IBAction func sixtyMinsTapped(_ sender: AnyObject) {
+        let sendNotification = SendNotification()
+        sendNotification.registerForNotifications()
+    }
+    
+    
+    @IBAction func twoHoursTapped(_ sender: AnyObject) {
+        let sendNotification = SendNotification()
+        sendNotification.registerForNotifications()
+    }
+    
+    @IBAction func twentyFourHoursTapped(_ sender: AnyObject) {
+        let sendNotification = SendNotification()
+        sendNotification.registerForNotifications()
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,5 +105,16 @@ class MessagesViewController: MSMessagesAppViewController {
         
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
+    
+    //@IBAction func twentyMins(_ sender: UIButton) {
+      //  print("button pressed")
+    //}
+    
+   
+    
+    
+    
+    
+    
     
 }

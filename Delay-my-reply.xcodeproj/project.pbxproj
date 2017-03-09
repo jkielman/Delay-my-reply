@@ -17,6 +17,7 @@
 		B55F962B1CFF829D00B33E33 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55F96291CFF829D00B33E33 /* MainInterface.storyboard */; };
 		B55F962D1CFF829D00B33E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F962C1CFF829D00B33E33 /* Assets.xcassets */; };
 		B55F96311CFF829D00B33E33 /* Delay-my-replyMessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B55F96241CFF829D00B33E33 /* Delay-my-replyMessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE045FA71E71076E0058095C /* SendNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE045FA61E71076E0058095C /* SendNotification.swift */; };
 		CE18D0C51E6F970400B9F1B2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE18D0C41E6F970400B9F1B2 /* UserNotifications.framework */; };
 		CE18D0C61E6F970E00B9F1B2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE18D0C41E6F970400B9F1B2 /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		B55F962A1CFF829D00B33E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B55F962C1CFF829D00B33E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55F962E1CFF829D00B33E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE045FA61E71076E0058095C /* SendNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNotification.swift; sourceTree = "<group>"; };
 		CE18D0C41E6F970400B9F1B2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				B55F96271CFF829D00B33E33 /* MessagesViewController.swift */,
+				CE045FA61E71076E0058095C /* SendNotification.swift */,
 				B55F96291CFF829D00B33E33 /* MainInterface.storyboard */,
 				B55F962C1CFF829D00B33E33 /* Assets.xcassets */,
 				B55F962E1CFF829D00B33E33 /* Info.plist */,
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE045FA71E71076E0058095C /* SendNotification.swift in Sources */,
 				B55F96281CFF829D00B33E33 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
